@@ -1,0 +1,173 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Oct 7, 2024, 9:58:49 PM
+    Author     : Admin
+*/
+
+body {
+    background-color: #f8f9fa;
+}
+
+.main-content {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.card-container {
+    display: flex;
+    align-items: stretch;
+}
+
+.card {
+    height: 100%;
+    width: 100%;
+}
+
+.btn-outline-secondary,
+.btn-outline-primary,
+.btn-primary {
+    border-radius: 5px;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.form-control,
+.form-control-sm,
+.btn {
+    border-radius: 5px;
+}
+
+.dropdown-menu {
+    min-width: 10rem;
+}
+
+.table th,
+.table td {
+    vertical-align: middle;
+}
+
+.list-unstyled li {
+    font-size: 0.9rem;
+    border-bottom: 1px dashed #ccc;
+    padding: 0.5rem 0;
+}
+
+.list-unstyled li:last-child {
+    border-bottom: none;
+}
+
+.form-check-label {
+    font-size: 0.85rem;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.d-flex .btn {
+    height: 38px;
+    font-size: 0.9rem;
+}
+
+.card-body>.form-control {
+    margin-bottom: 1rem;
+}
+
+.d-flex>.btn,
+.d-flex>.form-check,
+.d-flex>select {
+    margin-right: 0.5rem;
+}
+
+.d-flex .form-check {
+    margin-left: auto;
+}
+
+.card {
+    margin-bottom: 1.5rem;
+}
+
+.table tbody td {
+    color: #aaa;
+    text-align: center;
+}
+
+.list-unstyled a {
+    color: #007bff;
+}
+
+.list-unstyled span {
+    font-weight: bold;
+}
+
+a.text-primary {
+    text-decoration: none;
+}
+
+a.text-primary:hover {
+    text-decoration: underline;
+}
+
+.btn a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.btn a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.product-item {
+                display: flex;
+                align-items: center;
+                padding: 10px;
+                cursor: pointer;
+                border-bottom: 1px solid #ccc;
+            }
+            .product-item:hover {
+                background-color: #f5f5f5;
+            }
+            #productList {
+                display: none;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                background-color: #fff;
+                max-height: 200px;
+                overflow-y: auto;
+                position: absolute;
+                width: 100%;
+                z-index: 1000;
+            }
+            .product-image {
+                width: 40px;
+                height: 40px;
+                margin-right: 10px;
+            }
+            #productDetailsForm {
+                margin-top: 20px;
+            }
+            #productDetailsForm {
+                margin-top: 20px;
+            }
+            #supplierDetailDisplay {
+                display: none;
+                padding: 10px;
+                border: 1px solid #ccc;
+                margin-top: 20px;
+                background-color: #f5f5f5;
+            }
+            
+            

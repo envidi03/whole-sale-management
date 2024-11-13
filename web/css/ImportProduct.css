@@ -1,0 +1,317 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Oct 7, 2024, 10:02:14 PM
+    Author     : Admin
+*/
+
+ /* Basic Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    overflow-x: hidden;
+    /* Prevent horizontal scroll */
+}
+
+/* Sidebar Styling */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #212529;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: width 0.3s ease;
+    color: white;
+    z-index: 1000;
+}
+
+/* Sidebar links */
+.sidebar a {
+    padding: 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #f1f1f1;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sidebar a:hover {
+    background-color: #343a40;
+}
+
+/* Collapsed Sidebar */
+.sidebar.collapsed {
+    width: 70px;
+}
+
+/* Sidebar Menu Text */
+.sidebar .menu-text {
+    display: inline-block;
+}
+
+/* Hide Menu Text in Collapsed Sidebar */
+.sidebar.collapsed .menu-text {
+    display: none;
+}
+
+/* Sidebar Header Styling (Logo + Toggle Button) */
+.sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #212529;
+    color: white;
+    align-items: center;
+    border-bottom: 1px solid #343a40;
+    margin: 0;
+}
+
+hr.divider {
+    margin: 0;
+    border: 0;
+    border-top: 1px solid #343a40;
+}
+
+/* Hide Logo in Collapsed Sidebar */
+.sidebar.collapsed .logo {
+    display: none;
+}
+
+/* Sidebar Toggle Button */
+.toggle-btn {
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+/* Enlarged Toggle Button in Collapsed Sidebar */
+.sidebar.collapsed .toggle-btn {
+    font-size: 24px;
+    left: 10px;
+}
+
+/* Navigation Links Icons */
+.nav-link i {
+    font-size: 1.5rem;
+    color: #f1f1f1;
+}
+
+/* Navigation Links Text */
+.nav-link .menu-text {
+    margin-left: 10px;
+}
+
+/* Submenu Indentation for Collapsed Section */
+.collapse .nav-link {
+    padding-left: 30px;
+    /* Indent sub-menu items */
+}
+
+/* Submenu Styling */
+ul.list-unstyled {
+    padding-left: 0;
+}
+
+.sidebar ul .nav-item {
+    display: block;
+    width: 100%;
+}
+
+.sidebar ul .nav-link:hover {
+    background-color: #343a40;
+}
+
+/* Styling for Collapsed Submenu Icon */
+.sidebar.collapsed .bi-caret-down-fill {
+    display: none;
+}
+
+/* Main Content Styling */
+.header-content {
+    margin-left: 250px;
+    padding: 0;
+    transition: margin-left 0.3s ease;
+    width: calc(100% - 250px);
+}
+
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    transition: margin-left 0.3s ease;
+    width: calc(100% - 250px);
+}
+
+/* Main content when sidebar is collapsed */
+.header-content.expanded,
+.main-content.expanded {
+    margin-left: 70px;
+    width: calc(100% - 70px);
+}
+
+/* Header Styling */
+.header {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 0 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: margin-left 0.3s ease, width 0.3s ease;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Style for the icons and text in the header */
+.header-icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-icons .icon-item {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: #6c757d;
+}
+
+.header-icons .icon-item i {
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+/* User Profile dropdown styling */
+.dropdown .btn {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: #6c757d;
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    width: 250px;
+    border-radius: 6px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-menu .dropdown-item {
+    font-size: 15px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-menu .dropdown-item i {
+    font-size: 18px;
+    margin-right: 8px;
+}
+
+/* Notification bell styling */
+.header-icons .bi-bell-fill {
+    font-size: 22px;
+    color: blue;
+    margin-left: auto;
+}
+
+/* Adjust margins between items */
+.ms-3 {
+    margin-left: 1rem;
+}
+
+/* Button Styles */
+.btn-primary {
+    background-color: #0056b3;
+    color: #ffffff;
+    border: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 6px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #004080;
+    color: #ffffff;
+}
+
+/* Filter Button Styling */
+.button-filter {
+    border: 1px solid #9ea0a1;
+    color: #495057;
+    background-color: #f8f9fa;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.button-filter:hover {
+    background-color: #e2e6ea;
+    color: #212529;
+}
+
+/* Responsive Sidebar */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 70px;
+    }
+
+    .header-content,
+    .main-content {
+        margin-left: 70px;
+        width: calc(100% - 70px);
+    }
+
+    .sidebar .menu-text {
+        display: none;
+    }
+
+    .filter-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+/* Further adjust for very small screens */
+@media (max-width: 576px) {
+
+    .header-content,
+    .main-content {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .sidebar {
+        position: absolute;
+        height: 100%;
+        z-index: 1000;
+    }
+
+    .sidebar.collapsed {
+        display: none;
+    }
+
+    .header {
+        margin-left: 0;
+    }
+
+    .toggle-btn {
+        display: block;
+    }
+}
